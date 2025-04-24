@@ -56,7 +56,15 @@ fn main() {
         // do stuff with s
     }                      // this scope is now over, and s is no longer valid
 
-    println!("{}", s)
+    println!("{}", s);
+
+    
+    let mut s = String::from("hello");
+
+    s.push_str(", world!"); // push_str() appends a literal to a String
+
+    println!("{s}"); // This will print `hello, world!`
+
 
 
 
